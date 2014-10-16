@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:weightSum="1" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical" 
+        android:layout_weight="0.5"
+            android:padding="10dp">
+
+        <TextView
+            android:id="@+id/merits_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Merits"
+            android:textSize="30sp" />
+
+        <ListView
+            android:id="@+id/merits_listview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5" 
+            android:layout_gravity="center_horizontal">
+        </ListView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical"  
+        android:layout_weight="0.5"
+            android:padding="10dp">
+
+        <TextView
+            android:id="@+id/demerits_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Demerits"
+            android:textSize="30sp" />
+
+        <ListView
+            android:id="@+id/demerits_listview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" 
+            android:layout_gravity="center_horizontal">
+        </ListView>
+
+    </LinearLayout>
+
+</LinearLayout>
