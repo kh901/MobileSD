@@ -20,7 +20,7 @@
         android:layout_gravity="center_horizontal"
         android:padding="10dp"
         android:text="TextView"
-        android:textSize="30sp" />
+        android:textSize="30sp" /> 
 
     <TextView
         android:id="@+id/teacher_today_announcements"

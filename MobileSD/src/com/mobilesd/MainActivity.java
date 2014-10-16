@@ -30,7 +30,7 @@ public class MainActivity extends ActionBarActivity {
         int id = item.getItemId();
         if (id == R.id.action_settings) {
             return true;
-        }
+        } 
         return super.onOptionsItemSelected(item);
     }
 }
