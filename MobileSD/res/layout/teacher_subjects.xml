@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+    
+
+    
+   
+   
+   
+   
+   
+   
+	<LinearLayout
+	    android:id="@+id/select_layout"
+	    android:layout_width="match_parent"
+    	android:layout_height="match_parent"
+    	android:weightSum="1"
+    	android:orientation="vertical"
+    	android:background="#FFFFFF">
+		<LinearLayout
+		    android:layout_width="match_parent"
+		    android:layout_height="0dp"
+		    android:layout_weight="0.34"
+		    android:orientation="vertical" >
+		</LinearLayout>
+			<LinearLayout 
+		    android:layout_width="match_parent"
+		    android:layout_height="0dp"
+		    android:layout_weight="0.39"
+		    android:orientation="vertical">
+	
+			<Button
+			    android:id="@+id/view_students_button"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:text="View Students" 
+			    android:layout_gravity="center_horizontal">	    
+			</Button>
+			  </LinearLayout>
+	</LinearLayout>
+    
+
+	    
+	    
+	
+	
+	   <LinearLayout 
+	    android:id="@+id/set_homework_layout"
+	   	android:layout_width="match_parent"
+    	android:layout_height="match_parent"
+    	android:weightSum="1"
+    	android:orientation="vertical" 
+    	android:background="#FFFFFF">
+
+	       <TextView
+	           android:id="@+id/textview1"
+	           android:layout_width="wrap_content"
+	           android:layout_height="wrap_content"
+	           android:text="Task"
+	           android:textAppearance="?android:attr/textAppearanceMedium" 
+	           android:layout_marginLeft="10dp"/>
+
+	       <LinearLayout
+	           android:layout_width="match_parent"
+	           android:layout_height="0dp"
+	           android:layout_weight="0.67"
+	           android:orientation="vertical"
+	           android:padding="10dp" >
+
+	           <EditText
+	               android:layout_width="fill_parent"
+	               android:layout_height="wrap_content"
+	               android:layout_weight="0.87"
+	               android:gravity="top|left"
+	               android:inputType="textMultiLine"
+	               android:lines="8"
+	               android:maxLines="10"
+	               android:minLines="6"
+	               android:scrollbars="vertical" 
+	               android:background="@drawable/text_area_homework_task"
+	               android:id="@+id/task_textarea"/>
+	       </LinearLayout>
+	       
+	       <LinearLayout
+	           android:layout_width="match_parent"
+	           android:layout_height="0dp"
+	           android:layout_weight="0.1"
+	           android:padding="5dp">
+
+	           <TextView
+	               android:id="@+id/textView2"
+	               android:layout_width="wrap_content"
+	               android:layout_height="wrap_content"
+	               android:text="Date Due"
+	               android:textAppearance="?android:attr/textAppearanceMedium" 
+	               android:layout_marginRight="30dp"/>
+
+	           <EditText
+	               android:id="@+id/date_due_field"
+	               android:layout_width="wrap_content"
+	               android:layout_height="wrap_content"
+	               android:layout_weight="1"
+	               android:ems="10"
+	               android:inputType="date" >
+
+	               <requestFocus />
+	           </EditText>
+
+	       </LinearLayout>
+
+	       <RelativeLayout
+	           android:layout_width="match_parent"
+	           android:layout_height="wrap_content"
+	           android:layout_weight="0.19"
+	           android:orientation="vertical" >
+
+	           <Button
+	               android:id="@+id/confirm_homework_button"
+	               android:layout_width="wrap_content"
+	               android:layout_height="wrap_content"
+	               android:layout_centerHorizontal="true"
+	               android:layout_centerVertical="true"
+	               android:text="Confirm" />
+
+	       </RelativeLayout>
+       
+    </LinearLayout>
+	    
+	
+	   
+	   
+	   
+	   
+	   
+	   <LinearLayout 
+	       
+	       
+	    ></LinearLayout>
+	
+	
+    
+    
+</FrameLayout>
