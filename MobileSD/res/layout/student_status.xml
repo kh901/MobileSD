@@ -22,10 +22,12 @@
 
         <ListView
             android:id="@+id/merits_listview"
-            android:layout_width="match_parent"
+            android:layout_width="130dp"
             android:layout_height="wrap_content"
-            android:layout_weight="0.5" 
-            android:layout_gravity="center_horizontal">
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="0.5"
+            android:background="@drawable/text_area_homework_task" >
+
         </ListView>
 
     </LinearLayout>
@@ -47,9 +49,11 @@
 
         <ListView
             android:id="@+id/demerits_listview"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" 
-            android:layout_gravity="center_horizontal">
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/text_area_homework_task" >
+
         </ListView>
 
     </LinearLayout>
