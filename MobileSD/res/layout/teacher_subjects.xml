@@ -134,10 +134,98 @@
 	   
 	   
 	   
-	   <LinearLayout 
+	   <LinearLayout
+	       android:id="@+id/award_student_layout"
+       	  android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:layout_weight="0.19"
+           android:orientation="vertical"
+           android:background="#FFFFFF"
+           android:weightSum="1">
+
+	       <LinearLayout
+	           android:layout_width="match_parent"
+	           android:layout_height="wrap_content"
+	           android:orientation="vertical" >
+
+	           <TextView
+	               android:id="@+id/textView3"
+	               android:layout_width="wrap_content"
+	               android:layout_height="wrap_content"
+	               android:text="Give this student a:"
+	               android:textAppearance="?android:attr/textAppearanceMedium" 
+	               android:layout_marginTop="10dp"
+	               android:layout_marginLeft="10dp"/>
+
+	       </LinearLayout>
+
+	       <LinearLayout
+	           android:layout_width="match_parent"
+	           android:layout_height="wrap_content" >
+
+	           <RadioButton
+	               android:id="@+id/merit_option"
+	               android:layout_width="wrap_content"
+	               android:layout_height="wrap_content"
+	               android:layout_weight="0.50"
+	               android:text="Merit" />
+
+	           <RadioButton
+	               android:id="@+id/demerit_option"
+	               android:layout_width="wrap_content"
+	               android:layout_height="wrap_content"
+	               android:layout_weight="0.50"
+	               android:text="Demerit" />
+
+	       </LinearLayout>
+
+	       <LinearLayout
+	           android:layout_width="match_parent"
+	           android:layout_height="wrap_content"
+	           android:layout_weight="0.62"
+	           android:orientation="vertical"
+	           android:padding="10dp" >
+
+	           <TextView
+	               android:id="@+id/textView4"
+	               android:layout_width="wrap_content"
+	               android:layout_height="wrap_content"
+	               android:text="Reason"
+	               android:textAppearance="?android:attr/textAppearanceMedium" />
+
+	           	   <EditText
+	           	       android:id="@+id/reason_textarea"
+	           	       android:layout_width="fill_parent"
+	           	       android:layout_height="wrap_content"
+	           	       android:layout_weight="0.87"
+	           	       android:background="@drawable/text_area_homework_task"
+	           	       android:gravity="top|left"
+	           	       android:hint="Click to add a reason"
+	           	       android:inputType="textMultiLine"
+	           	       android:lines="8"
+	           	       android:maxLines="10"
+	           	       android:minLines="6"
+	           	       android:scrollbars="vertical"
+	           	       android:padding="10dp" />
+	           
+	       </LinearLayout>
+
+	       <RelativeLayout
+	           android:layout_width="match_parent"
+	           android:layout_height="wrap_content"
+	           android:layout_weight="0.27" >
+
+	           <Button
+	               android:id="@+id/confirm_award_button"
+	               android:layout_width="wrap_content"
+	               android:layout_height="wrap_content"
+	               android:layout_centerHorizontal="true"
+	               android:layout_centerVertical="true"
+	               android:text="Confirm" />
+
+	       </RelativeLayout>
 	       
-	       
-	    ></LinearLayout>
+	    </LinearLayout>
 	
 	
     
